@@ -12,7 +12,7 @@ export const buildOptions = (options: BuildOptions): webpack.Configuration => {
 		mode,
 		entry: path.entry,
 		module: {
-			  rules: buildLoaders()
+			  rules: buildLoaders(options)
 			},
 		resolve: buildResolve(),
 		output: {
